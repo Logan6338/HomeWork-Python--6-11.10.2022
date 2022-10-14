@@ -6,31 +6,6 @@
 # Пример:
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
-## БЫЛО!!!!
-
-# import random
-
-# number = 8
-# line = []
-
-# for i in range(number):
-#     line.append(random.randint(100, 1000)/100)
-
-# max = float(0)
-# min = float(1)
-
-# for i in line:
-#     if max < i % 1:
-#         max = i % 1
-#     if min > i % 1:
-#         min = i % 1
-
-# print(line)
-# print(f'{max-min:.2f}')
-
-
-#№ СТАЛО!!!
-
 def find_fractional_diff(array):
     fractional_map = map(lambda num: num % 1, array)
     fractional_list = list(filter(lambda x: x != 0, fractional_map))
